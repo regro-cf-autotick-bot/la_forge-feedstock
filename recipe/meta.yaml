@@ -1,5 +1,5 @@
 {% set name = "la_forge" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0b457003af2bcfe49b3320708520eb9e93a7b882f6b318b388f3107b9f630eee
+  sha256: 0f27c3ecd7c887f4b027d65b94bebfb52da1c6c2b083ae1784d24797f7815366
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -43,7 +43,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Pulsar Timing Array Bayesian Data Visualization'
+  summary: Pulsar Timing Array Bayesian Data Visualization
   description: |
     Python package for conveniently plotting results from pulsar timing array bayesian analyses. Many of the functions are best used with enterprise outputs.
   doc_url: https://la-forge.readthedocs.io/
