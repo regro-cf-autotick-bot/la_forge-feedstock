@@ -1,5 +1,5 @@
 {% set name = "la_forge" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0f27c3ecd7c887f4b027d65b94bebfb52da1c6c2b083ae1784d24797f7815366
+  sha256: 73914920147713c2bbac2fb07dd4e74d0e66e6557e7de99c6da7989c7314b9f2
 
 build:
   noarch: python
