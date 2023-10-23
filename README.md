@@ -1,11 +1,11 @@
-About la_forge
-==============
+About la_forge-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/la_forge-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/nanograv/la_forge
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/la_forge-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pulsar Timing Array Bayesian Data Visualization
 
