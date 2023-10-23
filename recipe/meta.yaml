@@ -27,6 +27,8 @@ requirements:
     - corner
     - six
     - h5py >=3.4.0
+    - emcee >=3.0.0
+    - uncertainties >=3.0.0
 
 test:
   imports:
