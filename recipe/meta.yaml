@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.16
     - scipy >=1.0.0
     - matplotlib-base >=2.0.0
-    - astropy >=3.0
+    - astropy-base >=3.0
     - corner
     - six
     - h5py >=3.4.0
