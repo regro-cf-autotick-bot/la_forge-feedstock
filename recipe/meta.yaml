@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 73914920147713c2bbac2fb07dd4e74d0e66e6557e7de99c6da7989c7314b9f2
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.16
     - scipy >=1.0.0
     - matplotlib-base >=2.0.0
@@ -31,6 +31,8 @@ requirements:
     - uncertainties >=3.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - la_forge
     - la_forge.diagnostics
